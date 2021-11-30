@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Puji Mei Indriana Sihombing 2072050">
+    <title>Bilangan Faktorial</title>
+</head>
+<body>
+    <script>
+        let faktorial = prompt("Bilangan inputan:");
+        let nilai = 1
+        for (let i=faktorial; i>0; i--) {
+            nilai = nilai * i;
+        }
+        document.write("Hasil dari ",faktorial,"! adalah ",Math.round(nilai));
+    </script>
+</body>
+</html>

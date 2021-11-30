@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Puji Mei Indriana Sihombing 2072050">
+    <title>Kotak</title>
+    <style>
+         .border{
+            position: static;
+            border: 1px solid black; 
+            width: 35px;
+            height: 15px;
+            display: inline-block;
+            text-align: center;
+            background-color: gray;
+         }
+    </style>
+</head>
+<body>
+    <script>
+        let baris = prompt("Jumlah baris:");
+        let kolom = prompt("Jumlah kolom:");
+        let warna1 = prompt("Warna 1 (Hexadecimal):");
+        let warna2 = prompt("Warna 2 (Hexadecimal):");
+        for (let i = 0; i < kolom; i++) {
+            for (let j = 0; j < baris; j++) {
+            document.write("<div class='border'>"+i+"</div>");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

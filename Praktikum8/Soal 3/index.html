@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Puji Mei Indriana Sihombing 2072050">
+    <title>Piramida</title>
+    <style>
+        .border {
+            position: static;
+            border: 1px solid black;
+            width : 200px;
+            height : 15px;
+            display: inline-block;
+            text-align: center;
+            background-color: green;
+        }
+        .border1 {
+            display: inline-block;
+            width: 0px;
+            width:0px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let angka = prompt("besar angka :");
+        document.write("<div style='text-align: center;'>");
+        for (let i = 1; i < angka; i++) {
+            for (let j = 0; j < i; j++) {
+                document.write("<div class='border'>"+i+"</div>");
+                document.write("<div class='border1'></div>")
+            }
+            document.write("<br>")
+        }
+        document.write("</div>");
+    </script>
+</body>
+</html>

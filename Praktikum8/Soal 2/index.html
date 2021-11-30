@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Puji Mei Indriana Sihombing 2072050">
+    <title>Bilangan Prima</title>
+</head>
+<body>
+    <script>
+        let bilangan = prompt("Bilangan yang ingin di cek:");
+        
+        let prima = 0
+        for (let i=1; i<=bilangan; i++){
+            if (bilangan % i == 0) {
+                prima++
+            }
+        }
+        if (prima == 2) {
+            document.write("Bilangan ",bilangan," adalah bilangan prima");
+        } 
+        else {
+            document.write("Bilangan ",bilangan," bukan bilangan prima");
+        }
+    </script>
+</body>
+</html>
